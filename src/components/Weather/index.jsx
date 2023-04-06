@@ -40,9 +40,9 @@ export const Weather = () => {
             <div className="description">
               {data.weather ? <p>{data.weather[0].main}</p> : null}
             </div>
-{/* <div className="icon">
-{data.weather ? <p>`https://openweathermap.org/img/wn/{data.weather[0].icon}@4x.png`</p> : null}
-</div> */}
+<div className="icon">
+{data.weather ? <img{'https://openweathermap.org/img/wn/{data.weather[0].icon}@4x.png'}/> : null}
+</div>
           </div>
         )}
 
